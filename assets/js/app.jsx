@@ -9,3 +9,5 @@ var ReactDOM = require('react-dom');
 var WakaTime = require('./components/WakaTime.jsx');
 
 ReactDOM.render(<WakaTime />, document.getElementById('wakatime'));
+
+export default WakaTime;

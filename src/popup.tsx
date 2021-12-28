@@ -3,6 +3,8 @@ import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import createStore from './stores/createStore';
 import checkCurrentUser from './utils/checkCurrentUser';
+import WakaTime from './../assets/js/components/WakaTime.jsx';
+
 const container = document.getElementById('wakatime');
 
 const store = createStore('WakaTime-Options');
@@ -14,8 +16,7 @@ const openOptions = async (): Promise<void> => {
 
 ReactDOM.render(
   <Provider store={store}>
-    <h1>POPUP GO HERE</h1>
-    <div onClick={openOptions}>Open options</div>
+    <WakaTime />
   </Provider>,
   container,
 );

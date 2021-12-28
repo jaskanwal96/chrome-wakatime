@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import Options from './../assets/js/components/Options.jsx';
 
 const container = document.getElementById('wakatime-options');
 
-ReactDOM.render(<h1>OPTIONS GO HERE</h1>, container);
+ReactDOM.render(<Options />, container);
